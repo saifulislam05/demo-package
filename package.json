@@ -1,6 +1,6 @@
 {
   "name": "arrays-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple package just for learning purpose",
   "main": "index.js",
   "scripts": {
