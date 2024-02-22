@@ -14,10 +14,10 @@ After installing, you can import the entire collection of utilities or individua
 
 ```javascript
 // Import the entire utilities collection
-const arrayUtils = require('your-package-name');
+const arrayUtils = require('arrays-utilities');
 
 // Or import individual functions
-const { sum, unique, binarySearch } = require('your-package-name');
+const { sum, unique, binarySearch } = require('arrays-utilities');
 ```
 ## Examples
 Below are some examples demonstrating how to use these utilities:
