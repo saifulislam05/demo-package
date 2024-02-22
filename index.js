@@ -45,6 +45,28 @@ const partition = (array, predicate) =>
     [[], []]
   );
 
+  // Performs a binary search on a sorted array to find the index of a given value.
+// Returns the index of the value if found, otherwise returns -1.
+const binarySearch = (array, value) => {
+  let low = 0;
+  let high = array.length - 1;
+
+  while (low <= high) {
+    const mid = Math.floor((low + high) / 2);
+    const midValue = array[mid];
+
+    if (midValue === value) {
+      return mid; // Found the value
+    } else if (midValue < value) {
+      low = mid + 1; // Continue searching in the right half
+    } else {
+      high = mid - 1; // Continue searching in the left half
+    }
+  }
+
+  return -1; // Value not found
+};
+
 module.exports = {
   sum,
   unique,
@@ -56,4 +78,5 @@ module.exports = {
   flatten,
   groupBy,
   partition,
+  binarySearch,
 };
